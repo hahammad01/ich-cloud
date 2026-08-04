@@ -44,7 +44,7 @@ def main():
                          batch_size=C.BATCH_SIZE, shuffle=False,
                          num_workers=C.NUM_WORKERS, pin_memory=True)
 
-    ckpt = torch.load(C.WORK_DIR / f"best_{args.model}.pt", map_location=device)
+    ckpt = torch.load(C.WORK_DIR / f"best_{args.model}.pt", map_location=device, weights_only=False)
     model = build_model(args.model, pretrained=False).to(device)
     model.load_state_dict(ckpt["state_dict"])
 
