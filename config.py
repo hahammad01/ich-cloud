@@ -86,7 +86,7 @@ WINDOWS = [(40, 80),    # brain
 # Training  (IDENTICAL for every model -> that is the whole point)
 # --------------------------------------------------------------------------
 BATCH_SIZE = 32
-EPOCHS = 2
+EPOCHS = 5
 LR = 3e-4
 WEIGHT_DECAY = 1e-4
 NUM_WORKERS = 4
