@@ -89,5 +89,5 @@ BATCH_SIZE = 32
 EPOCHS = 2
 LR = 3e-4
 WEIGHT_DECAY = 1e-4
-NUM_WORKERS = 2
+NUM_WORKERS = 4
 USE_AMP = True          # mixed precision -> ~2x faster on Colab T4
