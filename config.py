@@ -65,7 +65,7 @@ N_CLASSES = len(SUBTYPES)
 # Full set is ~19k patients / ~750k slices (~180 GB of DICOM) and will NOT fit
 # on free Colab disk. Sample this many PATIENTS (patient-level, no leakage).
 # Set to None to use everything (only on Kaggle Notebooks or a big-disk machine).
-SUBSET_N_PATIENTS = 3000
+SUBSET_N_PATIENTS = None
 SEED = 42
 
 # --------------------------------------------------------------------------
